@@ -37,7 +37,7 @@ names_fileP = str(options.n)
 
 @app.route('/')
 def functions():
-    return "this is sparta"
+    return "welcome to object detection"
 
 
 @app.route('/api/object_detection', methods=['POST'])
