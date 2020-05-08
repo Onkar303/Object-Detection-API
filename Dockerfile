@@ -2,8 +2,8 @@ FROM jjanzic/docker-python3-opencv
 WORKDIR /code
 ADD flaskServer.py /code
 ADD uploadedimages /code/uploadedimages
-ADD yolov3.weights /code
-ADD yolov3.cfg /code
+ADD yolov3-tiny.weights /code
+ADD yolov3-tiny.cfg /code
 ADD coco.names /code
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
